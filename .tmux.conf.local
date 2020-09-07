@@ -307,8 +307,9 @@ tmux_conf_copy_to_os_clipboard=false
 
 # EOF
 #
-# foo() {
-#   echo "foo"
+# weather() {
+#   curl wttr.in?format=3
+#   sleep 900 # sleep for 15 minutes, throttle network requests whatever the value of status-interval
 # }
 #
 # "$@"
