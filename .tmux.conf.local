@@ -297,19 +297,18 @@ tmux_conf_copy_to_os_clipboard=false
 
 
 # -- custom variables ----------------------------------------------------------
-
-# To define a custom #{foo} variable, define a POSIX shell function between the
+# to define a custom #{foo} variable, define a POSIX shell function between the
 # '# EOF' and the '# "$@"' lines. Please note that the opening brace { character
 # must be on the same line as the function name for the function to be detected.
 #
-# Then, use #{foo} in e.g. the 'tmux_conf_theme_status_left' or the
+# then, use #{foo} in e.g. the 'tmux_conf_theme_status_left' or the
 # 'tmux_conf_theme_status_right' variables.
 
-# EOF
+# EOF # /!\ make sure you don't alter this line
 #
 # weather() {
-#   curl wttr.in?format=3
+#   curl -m 1 wttr.in?format=3 2>/dev/null
 #   sleep 900 # sleep for 15 minutes, throttle network requests whatever the value of status-interval
 # }
 #
-# "$@"
+# "$@" # /!\ make sure you don't alter this line
